@@ -8,7 +8,7 @@ class App extends Component {
   };
   mostrar = (e) => {
     this.setState({
-      texto: e.target.value.checked ? lorem : '',
+      texto: e.target.checked ? lorem : '',
     });
   };
   render() {
