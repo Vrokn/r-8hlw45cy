@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <div className="wrapper">
         <label><input type="checkbox" onChange={this.mostrar} /> Mostrar información importante</label>
-        <p>{this.state.texto}</p>
+        {this.state.texto && <p>{this.state.texto}</p>} 
       </div>
     );
   }
